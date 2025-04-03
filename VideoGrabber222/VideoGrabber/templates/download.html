@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %}Download from {{ platform }} - Video Downloader{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1>Download from {{ platform }}</h1>
+    <form id="url-form">
+        <input type="text" id="url" name="url" placeholder="Enter {{ platform }} video URL" required>
+        <button type="submit">Get Formats</button>
+    </form>
+    <div id="formats"></div>
+    <div id="status"></div>
+    <div class="ad">Advertisement 2</div>
+</div>
+{% endblock %}

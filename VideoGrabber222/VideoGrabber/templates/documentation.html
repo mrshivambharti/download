@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block title %}Documentation - Video Downloader{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1>How to Download Videos</h1>
+    <ol>
+        <li>Go to the platform-specific download page (e.g., YouTube).</li>
+        <li>Paste the video URL into the form and click "Get Formats".</li>
+        <li>Select the desired video quality from the options provided.</li>
+        <li>Click on the quality button to start the download immediately.</li>
+    </ol>
+    <h2>Screenshots</h2>
+    <img src="{{ url_for('static', filename='screenshot1.png') }}" alt="Enter URL">
+    <img src="{{ url_for('static', filename='screenshot2.png') }}" alt="Select Quality">
+    <div class="ad">Advertisement 3</div>
+</div>
+{% endblock %}
